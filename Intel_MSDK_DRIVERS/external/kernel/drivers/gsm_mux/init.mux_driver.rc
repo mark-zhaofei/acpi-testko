@@ -1,0 +1,4 @@
+on post-fs
+    chown root system /vendor/lib/modules/gsm_mux.ko
+    chmod 0664 /vendor/lib/modules/gsm_mux.ko
+    insmod /vendor/lib/modules/gsm_mux.ko
